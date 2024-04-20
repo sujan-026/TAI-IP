@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.menu-dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    z-index: 1;
+}
+
+.menu-dropdown a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.menu-dropdown.show {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cookie, #dounts, #cheesecake, #spaghetti, #palakpaneer, #aloogobi{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#cookie:hover {
+    transform: translateY(-5px);
+    margin-top: 10px;
+}
+
+#dounts:hover {
+    transform: translateY(-5px);
+}
+
+#cheesecake:hover {
+    transform: translateY(-5px);
+}
+
+#spaghetti:hover {
+    transform: translateY(-5px);
+}
+
+#palakpaneer:hover {
+    transform: translateY(-5px);
+}
+#aloogobi:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-description{
+    padding: 10px 0px 10px 10px;
+    margin: 10px 0px 10px 20px;
+    color: black;
+}
+
+.recipe-name{
+    padding: 10px 0px 10px 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+.recipe-img {
+    width: 300px;;
+    height: 300px; /* Set a fixed height for uniformity */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    object-fit: auto; /* Ensure the image covers the entire container */
+    margin: 10px 0px 10px 20px;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-dropdown {
+        display: none;
+    }
+
+    .menu-dropdown.show {
+        display: flex;
+    }
+
+    .recipe-card{
+        width: 200px;
+    }
+
+    .recipe-img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    }
+}
+

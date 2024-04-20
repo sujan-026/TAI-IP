@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-s9VHxwB6mrHbSF59ydG0dDJWHG0mrRmLcSziR1nGD8R4U3Q9FS+BwJkwHnXVJGzQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Favorite Recipes</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">Recipes</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="./recipes.html">Recipes</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="menu-toggle">&#9776;</div>
+    <div class="menu-dropdown">
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Contact Us</a>
+    </div>
+</header>
+
+<div class="container" id="recipes">
+    <h2>Dessert Section</h2>
+    <div class="recipe-container">
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/choco.jpg" alt="Cookies">
+            <div class="recipe-info">
+                <h3 class="recipe-name">Chocolate Chip Cookies</h3>
+                <p class="recipe-description">Classic Italian pasta dish with creamy sauce made from eggs, cheese, pancetta, and black pepper.</p>
+                <a class="view-recipe-link" href="./recipes.html#cookie">View Recipe</a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/donuts.jpg" alt="Grilled Salmon">
+            <div class="recipe-info">
+                <h3 class="recipe-name">Donuts</h3>
+                <p class="recipe-description">Juicy grilled salmon fillets served with tangy lemon-dill sauce, perfect for a summer barbecue.</p>
+                <a class="view-recipe-link" href="./recipes.html#dounts">View Recipe</a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/cheesecake.jpg" alt="Cheesecake">
+            <div class="recipe-info">
+                <h3 class="recipe-name">New York Style Cheesecake</h3>
+                <p class="recipe-description">Decadent and creamy cheesecake with a graham cracker crust, a dessert fit for any occasion.</p>
+                <a class="view-recipe-link" href="./recipes.html#cheesecake">View Recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Main Dish Section</h2>
+    <div class="recipe-container">
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/Spaghetti Carbonara.jpg" alt="Spaghetti">
+            <div class="recipe-info">
+                <h3 class="recipe-name">Spaghetti Carbonara</h3>
+                <p class="recipe-description">Classic Italian pasta dish with creamy sauce made from eggs, cheese, pancetta, and black pepper.</p>
+                <a class="view-recipe-link" href="./recipes.html#spaghetti">View Recipe</a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/palak-paneer.jpg" alt="palak-paneer">
+            <div class="recipe-info">
+                <h3 class="recipe-name">Palak Paneer</h3>
+                <p class="recipe-description">Palak Paneer is a creamy Indian curry made with spinach (palak) and paneer (Indian cottage cheese).</p>
+                <a class="view-recipe-link" href="./recipes.html#palakpaneer">View Recipe</a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img class="recipe-img" src="./images/Aloo-Gobi.jpg" alt="aloo-gobi">
+            <div class="recipe-info">
+                <h3 class="recipe-name">Aloo Gobi</h3>
+                <p class="recipe-description">Aloo Gobi is a classic Indian dish made with potatoes (aloo) and cauliflower (gobi) cooked with aromatic spices.</p>
+                <a class="view-recipe-link" href="./recipes.html#aloogobi">View Recipe</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 My Recipes. All rights reserved.
+</footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuDropdown = document.querySelector('.menu-dropdown');
+
+    menuToggle.addEventListener('click', () => {
+        menuDropdown.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
